@@ -9,8 +9,8 @@
 
 
   <br>
-  <li id="h3">{{quote.name}} Posted on: {{quote.quoteDate|date}}</li><br>
-    <button class="" (click)='toogleDetails(i)'>Toogle Details</button>
+  <li id="h3">{{quote.name}} <li id = "poster">Posted on: {{quote.quoteDate|date}}</li><br>
+    <button class = "btn btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
   &nbsp;&nbsp;
 
   <button (click)='upvote(i)' class=""><i class="" ></i>  {{quote.upvotes}}</button>
