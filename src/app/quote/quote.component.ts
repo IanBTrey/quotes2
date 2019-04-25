@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Quote} from './quote'
+import {Quote} from '../quote'
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-quote',
+  templateUrl: './quote.component.html',
+  styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
 
@@ -20,10 +20,36 @@ export class QuoteComponent implements OnInit {
       new Quote(10,"While I breathe,I hope.","Author:Theocritus and Cicero","Ian Brian",0,0,new Date(2019,5,23)),
     ]
 
-    constructor() { }
+    toogleDetails(index){
+   this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+   this.quotes[index].showSubmit= !this.quotes[index].showSubmit;
+ }
 
-  ngOnInit() {
-
+ upvote(index){
+ this.quotes[index].upvotes++;
+}
+downvote(index){
+ this.quotes[index].downvotes++;
+}
+deleteQuote(isComplete,index){
+ if (isComplete){
+   let toDelete=confirm(`You sure you wanna delete this? ${this.quotes[index].name}`)
+   if(toDelete=true){
+     this.quotes.splice(index,1)
    }
+}
 
+ }
+
+
+ addNewQuote(quote){
+  this.quotes.push(quote)
+
+ }
+
+ constructor() { }
+
+ ngOnInit() {
+
+}
 }
