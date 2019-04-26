@@ -24,7 +24,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 |---------------------|-------------------------------------------------|------------------------------------------------------------|
 |  Shows quote info   | Fill in quote and its details                                   | Adds information to details component                                              |
 | Submit quote | Click submit button | Quote is added to personal list of quotes
-                              |
+                                                          |
 | Delete      | Click delete button                               | Deletes quote |
 | Upvote and Downvote | Click upvote and downvote button                                | Adds/Deducts votes on a quote                         |
 | Show time   | On click submit button              | Record and display time since quote was inputted                                           |
