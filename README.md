@@ -27,7 +27,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
                               |
 | Delete      | Click delete button                               | Deletes quote |
 | Upvote and Downvote | Click upvote and downvote button                                | Adds/Deducts votes on a quote                         |
-| Show time   | On click submit button              | Record and display time since quote was inputted                                         |
+| Show time   | On click submit button              | Record and display time since quote was inputted                                           |
 
 
 ## NO known Bugs
