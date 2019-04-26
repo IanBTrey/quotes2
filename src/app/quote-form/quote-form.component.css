@@ -1,10 +1,33 @@
 #quote{
   color: green;
-  font-size: 20px;
+  font-size: 40px;
 }
 #author{
   color: green;
+  font-size: 40px;
 }
 #submitby{
   color: green;
+  font-size: 40px;
+}
+.textarea{
+  width: 40vw;
+}
+.font{
+  font-size: 30px;
+}
+.container{
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 500px;
+  text-align: center;
+}
+.row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 500px;
+}
+#black{
+  color: black;
 }

@@ -13,10 +13,10 @@
     <button class = "btn btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
   &nbsp;&nbsp;
 
-  <button (click)='upvote(i)' class=""><i class="" ></i>  {{quote.upvotes}}</button>
+  <button (click)='upvote(i)' class=""><i class="btn btn-warning" ></i>  {{quote.upvotes}}</button>
   &nbsp;&nbsp;
 
-  <button (click)='downvote(i)' class=""><i class=""></i>  {{quote.downvotes}} </button>
+  <button (click)='downvote(i)' class=""><i class="btn btn-warning"></i>  {{quote.downvotes}} </button>
   <br>
 
     <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
